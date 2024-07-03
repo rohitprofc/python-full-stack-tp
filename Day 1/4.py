@@ -1,12 +1,14 @@
 #Constructor
 #when object is created constructor is automatically called
+
 #initalization of constructor '__init__()'
+
 #two types of constructor
     #default constructor
     #paramaterized constructor
 
 class book():
-    def __init__(self):
+    def __init__(self): #default constructor
         print("constructor calling")
     def normal(self):
         print("method calling")

@@ -5,7 +5,8 @@
 class student:
     college = 'SRGEC' #class member
     branch = 'AI&DS'
-    def info(self, id, name, phone, city): #member functions
+    
+    def info(self, id, name, phone, city): #member function
         print("---------------------")
         print(f"Roll: {id} | {student.branch}")
         print(f"Name: {name} | {student.college}")
@@ -15,5 +16,6 @@ class student:
 
 r = student()
 r.info(51, 'Rohit', 9494214912, 'Eluru')
+
 s = student()
-s.info(45, 'Sowmya', 9908271898, 'Gudivada')
+s.info(45, 'Sowmya', 8981728099, 'Gudivada')

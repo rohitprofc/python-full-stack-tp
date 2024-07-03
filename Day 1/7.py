@@ -6,4 +6,4 @@ for i in range(7,15):
     sum+=i
     print(sum)
 
-#range(7,15)-here 7 is initial value, 15 is last step value
+#range(7,15)-here 7 is initial value, 15 is last step value 

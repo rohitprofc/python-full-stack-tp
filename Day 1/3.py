@@ -1,5 +1,5 @@
 #Classes & Objects
-#coding practice 1
+#coding practice
 
 class car:
     def info(self, name, color, price, brand):
