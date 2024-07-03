@@ -12,8 +12,8 @@ class employee():
         print("--------------------------")
         print(f"Id    : {self.id}")
         print(f"Name  : {self.name}")
-        print(f"Salary : {self.salary}")
-        print(f"Job: {self.job}")
+        print(f"Salary: {self.salary}")
+        print(f"Job   : {self.job}")
         print("--------------------------")
 
 r1 = employee(1, 'Rohit', '$51,000', 'SDE')

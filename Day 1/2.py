@@ -8,14 +8,14 @@ class student:
     
     def info(self, id, name, phone, city): #member function
         print("---------------------")
-        print(f"Roll: {id} | {student.branch}")
-        print(f"Name: {name} | {student.college}")
+        print(f"Roll : {id} | {student.branch}")
+        print(f"Name : {name} | {student.college}")
         print(f"Phone: {phone}")
-        print(f"City: {city}")
+        print(f"City : {city}")
         print("---------------------")
 
-r = student()
-r.info(51, 'Rohit', 9494214912, 'Eluru')
+r1 = student()
+r1.info(51, 'Rohit', 9494214912, 'Eluru')
 
-s = student()
-s.info(45, 'Sowmya', 8981728099, 'Gudivada')
+r2 = student()
+r2.info(15, 'Rushi', 9494064572, 'H.Junction')
