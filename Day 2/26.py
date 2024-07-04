@@ -2,8 +2,8 @@
 
 age = [45, 12, 34, 15, 18, 90, 45, 12, 14, 11, 21, 20]
 
-adult_list, child_list = []
-child_count, adult_count = 0
+adult_list, child_list = [], []
+child_count, adult_count = 0, 0
 
 for i in age:
     if i<=18:

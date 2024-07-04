@@ -18,22 +18,18 @@ class calculator(addAndSub ,mulAndDiv):
 
 c=calculator()
 
-ch=int(input("enter the choice 1.sum/ 2.sub/ 3.mul/ 4.div ::"))
+ch=int(input("Enter the choice 1.sum/ 2.sub/ 3.mul/ 4.div::"))
 if ch==1:
-    print("enter a b values")
-    a,b=map(int,input().split())
+    a,b=map(int,input("Enter a b values: ").split())
     c.add(a,b)
 elif ch==2:
-    print("enter a b values")
-    a,b=map(int,input().split())
+    a,b=map(int,input("Enter a b values: ").split())
     c.sub(a,b)
 elif ch==3:
-    print("enter a b values")
-    a,b=map(int,input().split())
+    a,b=map(int,input("Enter a b values: ").split())
     c.mul(a,b)
 elif ch==4:
-    print("enter a b values")
-    a,b=map(int,input().split())
+    a,b=map(int,input("Enter a b values: ").split())
     c.div(a,b)
 else:
     print("invalid")
