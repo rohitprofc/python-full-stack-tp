@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <form action="https://www.google.com/">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="middleName">Middle Name (Optional):</label>
+        <input type="text" id="middleName" name="middleName">
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <br>
+        <label for="phoneNumber">Phone Number (Optional):</label>
+        <input type="tel" id="phoneNumber" name="phoneNumber">
+
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="8">
+
+        <br>
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+        <br>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male"> Male
+        <input type="radio" id="female" name="gender" value="female"> Female
+        <input type="radio" id="nonBinary" name="gender" value="non-binary"> Non-binary
+        <input type="radio" id="other" name="gender" value="other"> Other
+
+        <br>
+        <label for="education">Education:</label>
+        <select id="education" name="education">
+            <option value="">Select Education</option>
+            <option value="highSchool">High School</option>
+            <option value="associateDegree">Associate's Degree</option>
+            <option value="bachelorsDegree">Bachelor's Degree</option>
+            <option value="mastersDegree">Master's Degree</option>
+            <option value="phd">PhD</option>
+        </select>
+
+        <button type="submit">Register</button>
+        <button type="reset">Cancel</button>
+    </form>
+</body>
+
+</html>

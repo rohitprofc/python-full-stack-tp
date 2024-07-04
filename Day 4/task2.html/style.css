@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-image {
+    width: 20%;
+    align-self: center;
+}
+
+p {
+    text-align: center;
+    width: 50%;
+    text-indent: 1em;
+    line-height: 1.5;
+}
+
+.multimedia {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
