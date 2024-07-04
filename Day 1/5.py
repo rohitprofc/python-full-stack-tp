@@ -16,17 +16,17 @@ class book():
         print(f"Author: {self.author}")
         print("------------------------------------")
 
-tgr = book(1, 'The Girl in Room 105', '$2.19', 'Chetan Bhagat')
-tgr.display()
+b1 = book(1, 'The Girl in Room 105', '$2.19', 'Chetan Bhagat')
+b1.display()
 
-psm = book(2, 'Power of Subconcious Mind', '$1.69', 'Paul Joseph')
-psm.display()
+b2 = book(2, 'Power of Subconcious Mind', '$1.69', 'Paul Joseph')
+b2.display()
 
-onc = book(3, 'One Night @ Call Center', '$1.99', 'Chetan Bhagat')
-onc.display()
+b3 = book(3, 'One Night @ Call Center', '$1.99', 'Chetan Bhagat')
+b3.display()
 
-vap = book(4, 'Vennello Aadapilla', '$0.99', 'Yandamoori Veerendranadh')
-vap.display()
+b4 = book(4, 'Vennello Aadapilla', '$0.99', 'Yandamoori Veerendranadh')
+b4.display()
 
-ios = book(5, 'Idly-Orchid-Sky', '$3.69', 'Vital Kamath')
-ios.display()
+b5 = book(5, 'Idly, Orchid and Will Power', '$3.69', 'Vital Kamath')
+b5.display()
