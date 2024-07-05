@@ -43,5 +43,5 @@ Jupyter Notebooks offer a more organized and clear way to present information:
 
 This approach offers greater flexibility and readability:
 
-* Download the entire Python Full Stack repository from GitHub.
+* [Download](https://github.com/rohitprofc/python-full-stack-tp/archive/refs/heads/master.zip) the entire Python Full Stack repository from GitHub.
 * Open the downloaded repository using an IDE like Visual Studio Code.
