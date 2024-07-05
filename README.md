@@ -19,12 +19,12 @@
 
 ## Notes
 
-### Daily Prepared Notes
+### 1. Daily Prepared Notes
 
 * Each program written in a separate Python file.
 * Indexed for easy access.
 
-### Jupyter Notebooks (.ipynb)
+### 2. Jupyter Notebooks (.ipynb)
 
 Jupyter Notebooks offer a more organized and clear way to present information:
 
@@ -34,12 +34,12 @@ Jupyter Notebooks offer a more organized and clear way to present information:
 
 ## How to access notes
 
-**1. Direct Access (Simple Approach)**
+### 1. Direct Access (Simple Approach)**
 
 * Open the [Python Full Stack](https://github.com/rohitprofc/python-full-stack-tp) repository on GitHub.
 * Navigate to the specific folders containing the notes you're interested in.
 
-**2. Local Access (More Flexible and Organized)**
+### 2. Local Access (More Flexible and Organized)**
 
 This approach offers greater flexibility and readability:
 
