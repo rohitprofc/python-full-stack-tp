@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <form
+      name="reg"
+      action="https://www.google.com/"
+      onsubmit="fun()"
+      method="post"
+    >
+      <label for="name"> Enter Name: </label>
+      <input type="email" name="name" id="email" />
+      <label for="pass"> Enter Password: </label>
+      <input type="password" name="pass" id="" />
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+
+    <script>
+      document.querySelector("#submit").disabled = true;
+
+      document.querySelector("#email").onkeyup = () => {
+        if (document.querySelector("#email").value.length > 0) {
+          document.querySelector("#submit").disabled = false;
+        } else {
+          document.querySelector("#submit").disabled = true;
+        }
+      };
+      function fun() {
+        let name = document.reg.name.value;
+        let pass = document.reg.pass.value;
+
+        if (name == null || name == "") {
+          alert("Please Enter Name: ");
+        } else if (pass.length <= 8) {
+          alert("Please create 8 character password");
+        } else {
+          alert("Login Succesful");
+        }
+      }
+    </script>
+  </body>
+</html>

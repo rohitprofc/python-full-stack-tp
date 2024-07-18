@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form Validation</title>
+  </head>
+  <body>
+    <form
+      name="reg"
+      onsubmit="return validateForm()"
+    >
+      <label for="name">Enter Name: </label>
+      <input type="text" name="name" id="name" /><br /><br />
+
+      <label for="email">Enter Email: </label>
+      <input type="email" name="email" id="email" /><br /><br />
+
+      <label for="pass">Enter Password: </label>
+      <input type="password" name="pass" id="pass" /><br /><br />
+
+      <label for="confpass">Confirm Password: </label>
+      <input type="password" name="confpass" id="confpass" /><br /><br />
+
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+
+    <script>
+      document.querySelector("#submit").disabled = true;
+
+      document.querySelector("#email").onkeyup = () => {
+        if (document.querySelector("#email").value.length > 0) {
+          document.querySelector("#submit").disabled = false;
+        } else {
+          document.querySelector("#submit").disabled = true;
+        }
+      };
+
+      function validateForm() {
+        let name = document.reg.name.value;
+        let email = document.reg.email.value;
+        let pass = document.reg.pass.value;
+        let confpass = document.reg.confpass.value;
+
+        if (name == null || name == "") {
+          alert("Please enter your name.");
+          return false;
+        }
+
+        if (email == null || email == "") {
+          alert("Please enter your email.");
+          return false;
+        }
+
+        if (pass.length < 8) {
+          alert("Please create a password with at least 8 characters.");
+          return false;
+        }
+
+        if (pass !== confpass) {
+          alert("Passwords do not match. Please re-enter.");
+          return false;
+        }
+
+        alert("Registration Successful");
+
+        document.getElementsByName('input').value=''
+        return true;
+      }
+    </script>
+  </body>
+</html>

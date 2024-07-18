@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+    <style>
+        #style{
+            font-size: xx-large;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <script type="text/javascript">
+        let d = new Date();
+        document.write(`<div id="style">`)
+        document.write(`Date: ${d.getDate()} | `)
+        document.write(`Month: ${d.getMonth()+1} | `)
+        document.write(`Year: ${d.getFullYear()} | `)
+        document.write(`Day: ${d.getDay()} `)
+        document.write(`</div>`)
+    </script>
+</body>
+</html>

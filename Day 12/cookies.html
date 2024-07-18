@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies</title>
+</head>
+<body>
+
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name">
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email">
+    <input type="button" value="Setcookie" onclick="setCookie()">
+    <input type="button" value="Getcookie" onclick="getCookie()">
+
+    <script>
+        function setCookie() {
+            document.cookie = `name=${document.getElementById("name").value}; path=/`;
+            document.cookie = `email=${document.getElementById("email").value}; path=/`;
+        }
+
+        function getCookie() {
+            const cookies = document.cookie.split("; ");
+            let name = "";
+            let email = "";
+            cookies.forEach(cookie => {
+                const [key, value] = cookie.split("=");
+                if (key === "name") {
+                    name = value;
+                }
+                if (key === "email") {
+                    email = value;
+                }
+            });
+
+            if (name && email) {
+                alert(`Welcome back ${name}`);
+            } else {
+                alert("Welcome to the webpage");
+            }
+        }
+    </script>
+</body>
+</html>
