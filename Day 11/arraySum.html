@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <script>
+      let a = [67, 45, 67, 23, 90, 67, 66, 88, 34];
+      document.write(`<h1>The Array: ${a}</h1>`);
+      let sum = 0;
+      for (let i = 0; i < a.length; i++) {
+        sum = sum + a[i];
+      }
+      document.write(`<h1>Sum of array is: ${sum}</h1>`);
+      let avg = sum / a.length;
+      document.write(`<h1>Avg of array is: ${avg.toFixed(2)}</h1>`);
+    </script>
+  </body>
+</html>

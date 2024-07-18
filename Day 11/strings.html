@@ -1,0 +1,23 @@
+<html>
+  <body>
+    <script type="text/javascript">
+      var str1 = "JavaScript is ";
+      var str2 = new String("Frontend Language");
+      document.write(`<h1>First String is: ${str1}</h1>`); //javascript language
+      document.write(`<h1>Second String length is: ${str2.length}</h1>`); //frontend lang
+      //concat(:join two strings)
+      document.write(
+        `<h2>After concatination: ${str1.concat(str2)}</h2>`
+      );
+      //toLowerCase
+      document.write(`<h3> To LowerCase: ${str1.toLowerCase()}</h3>`);
+      document.write(`<h3> To UpperCase: ${str1.toUpperCase()}</h3>`);
+      //charAt
+      document.write(`<h3>${str1.charAt(2)}</h3>`);
+      //replace
+      document.write(`<h3>${str1.replace("JavaScript", "Java Programming")}</h3>`);
+      //substring
+      document.write(`<h3>${str2.substring(0, 5)}</h3>`);
+    </script>
+  </body>
+</html>

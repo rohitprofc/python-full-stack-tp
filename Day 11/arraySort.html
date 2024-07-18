@@ -1,0 +1,23 @@
+<html>
+  <body>
+    <script>
+      let a = [24, 67, 45, 1, 2, 23, 89];
+      document.write(`<h1>Array: ${a}</h1>`);
+      
+      //sort
+      a.sort();
+      document.write(`<h1>Sorted array is: ${a}</h1>`);
+      for (let i = 0; i < a.length; i++) {
+        document.write(`<h4>Array Element ${i+1}: ${a[i]}</h4>`);
+      }
+      
+      //reverse
+      a.reverse();
+      document.write(a + " ");
+      document.write(`<h1>The largest value is: ${a[0]}</h1>`);
+      
+      let s = a.length - 1;
+      document.write(`<h1>The smallest value is: ${a[s]}</h1>`);
+    </script>
+  </body>
+</html>

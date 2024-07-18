@@ -1,0 +1,17 @@
+<html>
+
+<body>
+    <script>
+        function reveal() {
+            var name = document.getElementById("l1").value
+            var pass = document.getElementById("p1").value
+            document.write(`<h1>Username: ${name}</h1>`)
+            document.write(`<h1>Password: ${pass}</h1>`)
+        }
+    </script>
+    Name: <input type="text" id="l1"><br>
+    Password: <input type="password" id="p1"><br>
+    <button id="b1" onclick="reveal()">Don't Click</button>
+</body>
+
+</html>

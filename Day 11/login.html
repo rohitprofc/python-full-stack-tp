@@ -1,0 +1,30 @@
+<html>
+
+<body>
+    <script>
+        function fun() {
+            var name = document.getElementById("l1").value
+            var pass = document.getElementById("p1").value
+            if (name == "rohit" && pass == "stronglobster") {
+                alert("Login Successful")
+            }
+            else {
+                alert("Enter valid username and password")
+                document.write(`<h1>Username is: ${name}</h1>`)
+                document.write(`<h1>Password is: ${pass}</h1>`)
+            }
+        }
+    </script>
+    <form>
+        <center>
+            <h1>Login Form</h1>
+            <label>Username: </label>
+            <input type="text" id="l1"><br>
+            <label>Password: </label>
+            <input type="password" id="p1"><br>
+            <button id="b1" onclick="fun()">click</button>
+        </center>
+    </form>
+</body>
+
+</html>
