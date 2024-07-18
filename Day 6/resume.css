@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.resume {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 5px 0;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+.project-item,
+.experience-item,
+.education-item {
+    margin-bottom: 15px;
+}
+
+.project-item h3,
+.experience-item h3,
+.education-item h3 {
+    margin: 0;
+}
+
+a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

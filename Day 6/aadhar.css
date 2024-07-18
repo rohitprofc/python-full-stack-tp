@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    overflow-y: hidden;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 10rem rgba(0, 0, 0, 0.5);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(90deg, #fdfcfb 0%, #e2d1c3 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.head-strip {
+    width: inherit;
+}
+
+.front-foot-strip {
+    margin-top: 4em;
+    width: inherit;
+}
+
+.back-foot-strip {
+    width: inherit;
+}
+
+h1 {
+    text-align: center;
+}
+
+.card {
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 2em;
+    box-shadow: 5px 10px;
+    margin-right: 2em;
+    height: 18em;
+    width: 30em;
+    background-color: white;
+    /* background: linear-gradient(90deg, #fdfbfb 0%, #ebedee 100%); */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: row;
+}
+
+.front-col-1 {
+    display: flex;
+    padding: 1.3em;
+    text-align: center;
+    justify-content: end;
+    text-wrap: nowrap;
+    transform: rotate(-90deg);
+    width: 10%;
+}
+
+.front-col-2 {
+    z-index: 1;
+    transform: translateX(-2em);
+    width: 20%;
+}
+
+.front-col-3 {
+    width: 70%;
+}
+
+.back-col-1 {
+    margin-left: 0.5em;
+    width: 100%;
+}
+
+.back-col-2 {
+    width: 50%;
+}
+
+p {
+    font-size: 11px;
+    margin: 0;
+}
