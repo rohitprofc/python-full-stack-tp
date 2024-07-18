@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: black;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        .animated-div {
+            width: 60vw;
+            height: 60vh;
+            animation: backgroundChange 5s ease-in-out infinite,
+                sizeChange 5s ease-in-out infinite,
+                moveRotate 10s ease-in-out infinite;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            font-size: 9em;
+        }
+
+        @keyframes backgroundChange {
+
+            0%,
+            33% {
+                background: red;
+            }
+
+            33%,
+            66% {
+                background: green;
+            }
+
+            66%,
+            100% {
+                background: palevioletred;
+            }
+        }
+
+        @keyframes sizeChange {
+
+            0%,
+            100% {
+                width: 60vw;
+                height: 60vh;
+            }
+
+            50% {
+                width: 80vw;
+                height: 80vh;
+            }
+        }
+
+        @keyframes moveRotate {
+            0% {
+                transform: translate(0px, 0px) rotate(0deg);
+            }
+
+            25% {
+                transform: translate(10vw, 0px) rotate(90deg);
+            }
+
+            50% {
+                transform: translate(10vw, 10vh) rotate(180deg);
+            }
+
+            75% {
+                transform: translate(0px, 10vh) rotate(270deg);
+            }
+
+            100% {
+                transform: translate(0px, 0px) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="animated-div">
+        Rohit Chess
+    </div>
+</body>
+
+</html>

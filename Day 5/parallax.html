@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Parallax Example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .parallax-section {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .p1 {
+            background: url("https://res.cloudinary.com/dtdhmbtcg/image/upload/v1720902517/Screenshot_2024-07-14_015622_spbo87.png") center/cover no-repeat;
+        }
+
+        .p2 {
+            background: url("https://res.cloudinary.com/dtdhmbtcg/image/upload/v1720902524/Screenshot_2024-07-14_015550_u9oyam.png") center/cover no-repeat;
+            background-attachment: fixed;
+        }
+
+        .parallax-section {
+            padding: 1px;
+        }
+
+        .content-section {
+            padding: 50px;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parallax-section p1">
+    </div>
+
+    <div class="content-section">
+    </div>
+
+    <div class="parallax-section p2">
+    </div>
+
+    <div class="content-section"></div>
+
+    <div class="parallax-section p1"></div>
+</body>
+
+</html>
