@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fibonacci Series</title>
+    <script>
+        function printFibonacci() {
+            let fib = [0, 1];
+            for (let i = 2; i < 10; i++) {
+                fib[i] = fib[i-1] + fib[i-2];
+            }
+            document.getElementById("fibonacci").innerText = fib.join(", ");
+        }
+    </script>
+</head>
+<body>
+    <h1>First 10 Fibonacci Numbers</h1>
+    <button onclick="printFibonacci()">Print Fibonacci</button>
+    <p id="fibonacci"></p>
+</body>
+</html>

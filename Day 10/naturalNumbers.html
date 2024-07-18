@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sum of Natural Numbers</title>
+    <script>
+        function sumOfNaturalNumbers() {
+            let num = parseInt(document.getElementById("sumInput").value);
+            let sum = 0;
+            for (let i = 1; i <= num; i++) {
+                sum += i;
+            }
+            document.getElementById("sumResult").innerText = sum;
+        }
+    </script>
+</head>
+<body>
+    <h1>Sum of Natural Numbers</h1>
+    <input type="number" id="sumInput" min="1" />
+    <button onclick="sumOfNaturalNumbers()">Find Sum</button>
+    <p id="sumResult"></p>
+</body>
+</html>

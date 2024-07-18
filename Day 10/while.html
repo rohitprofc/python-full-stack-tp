@@ -1,0 +1,20 @@
+<html>
+  <body>
+    <script>
+      var even_count = 0;
+      var odd_count = 0;
+      var start = 45;
+      var end = 67;
+      while (start <= end) {
+        if (start % 2 == 0) {
+          even_count++;
+        } else {
+          odd_count++;
+        }
+        start++;
+      }
+      document.write(`<h1>Even count: ${even_count}</h1>`);
+      document.write(`<h1>Odd count: ${odd_count}</h1>`);
+    </script>
+  </body>
+</html>
