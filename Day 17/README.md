@@ -235,9 +235,7 @@ ALTER TABLE tableName RENAME TO newTableName;
 ### Inserting Values into Table
 
 ```sql
-INSERT INTO tableName VALUES (col1Value1, col2
-
-Value1);
+INSERT INTO tableName VALUES (col1Value1, col2Value1);
 INSERT INTO tableName VALUES (col1Value2, col2Value2);
 ```
 
