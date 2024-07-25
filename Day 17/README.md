@@ -1,14 +1,14 @@
 # MySQL <img src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original-wordmark.svg" title="MySQL" alt="MySQL" width="55" height="55"/>
 
-## Database: Organized collection of data
+## Database: Organized Collection of Data
 
 ## Types of Databases
 
 1. **RDBMS:** Relational Database Management Systems
-2. **HDBMS:** Hierarchial Database Management Systems
+2. **HDBMS:** Hierarchical Database Management Systems
 3. **NDBMS:** Network Database Management Systems
 4. **OODBMS:** Object-Oriented Database Management Systems
-5. **NoSQL:** Database Management Systems
+5. **NoSQL:** Non-Relational Database Management Systems
 
 ## Tools for SQL Database Management
 
@@ -145,7 +145,7 @@
 
 ## SQL Statements
 
-### DDL: Data Definition Language(Manipulating Database Schema)
+### DDL: Data Definition Language (Manipulating Database Schema)
 
 - CREATE
 - ALTER
@@ -153,19 +153,19 @@
 - TRUNCATE
 - DROP
 
-### DML: Data Manipulation Language(For Manipulating Records in Table)
+### DML: Data Manipulation Language (For Manipulating Records in Table)
 
 - SELECT
 - INSERT
 - UPDATE
 - DELETE
 
-### DCL: Data Query Language
+### DCL: Data Control Language
 
 - GRANT
 - REVOKE
 
-### TCL: Transcation Control Language
+### TCL: Transaction Control Language
 
 - COMMIT
 - ROLLBACK
@@ -179,7 +179,7 @@
     show dbName;
     use dbName;
 
-### Show databases in Hardisk
+### Show Databases on Hard Disk
 
     show databases;
 
@@ -189,35 +189,35 @@
 
 ### Creating Table
 
-    create table tableName(columnName1 datatype,columnName2 datatype,columnName3 datatype);
+    create table tableName(columnName1 datatype, columnName2 datatype, columnName3 datatype);
 
 ### Table Description
 
     desc tableName;
 
-### Show tables in Database
+### Show Tables in Database
 
     show tables;
 
 ### Altering Table
 
-#### Adding Column to table
+#### Adding Column to Table
 
     alter table tableName add columnName datatype;
 
-#### Dropping Column to table
+#### Dropping Column from Table
 
     alter table tableName drop columnName;
 
-#### Renaming table name
+#### Renaming Table
 
     alter table tableName rename to newTableName;
 
-### Inserting values into table
+### Inserting Values into Table
 
     insert into tableName values(col1Value1, col2Value1);
     insert into tableName values(col1Value2, col2Value2);
 
-### Retrieving all records from table
+### Retrieving All Records from Table
 
     select * from tableName;
