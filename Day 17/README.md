@@ -1,4 +1,4 @@
-# MySQL <img src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original.svg" title="MySQL" alt="MySQL" width="55" height="55"/> 
+# MySQL<img src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original.svg" title="MySQL" alt="MySQL" width="55" height="55"/>
 
 ## Database: Organized Collection of Data
 
@@ -55,17 +55,14 @@
 ### Step 5: Configuration
 
 1. **Type and Networking**:
-
    - Select "Standalone MySQL Server".
    - Click "Next".
 
 2. **Authentication Method**:
-
    - Choose "Use Strong Password Encryption for Authentication (RECOMMENDED)".
    - Click "Next".
 
 3. **Accounts and Roles**:
-
    - Set the root password and create any additional user accounts.
    - Click "Next".
 
@@ -175,49 +172,77 @@
 
 ### Creating Database
 
-    create database dbName;
-    show dbName;
-    use dbName;
+```sql
+CREATE DATABASE dbName;
+SHOW DATABASES;
+USE dbName;
+```
 
 ### Show Databases on Hard Disk
 
-    show databases;
+```sql
+SHOW DATABASES;
+```
 
 ### Drop Database
 
-    drop database dbName;
+```sql
+DROP DATABASE dbName;
+```
 
 ### Creating Table
 
-    create table tableName(columnName1 datatype, columnName2 datatype, columnName3 datatype);
+```sql
+CREATE TABLE tableName (
+    columnName1 datatype, 
+    columnName2 datatype, 
+    columnName3 datatype
+);
+```
 
 ### Table Description
 
-    desc tableName;
+```sql
+DESC tableName;
+```
 
 ### Show Tables in Database
 
-    show tables;
+```sql
+SHOW TABLES;
+```
 
 ### Altering Table
 
 #### Adding Column to Table
 
-    alter table tableName add columnName datatype;
+```sql
+ALTER TABLE tableName ADD columnName datatype;
+```
 
 #### Dropping Column from Table
 
-    alter table tableName drop columnName;
+```sql
+ALTER TABLE tableName DROP columnName;
+```
 
 #### Renaming Table
 
-    alter table tableName rename to newTableName;
+```sql
+ALTER TABLE tableName RENAME TO newTableName;
+```
 
 ### Inserting Values into Table
 
-    insert into tableName values(col1Value1, col2Value1);
-    insert into tableName values(col1Value2, col2Value2);
+```sql
+INSERT INTO tableName VALUES (col1Value1, col2
+
+Value1);
+INSERT INTO tableName VALUES (col1Value2, col2Value2);
+```
 
 ### Retrieving All Records from Table
 
-    select * from tableName;
+```sql
+SELECT * FROM tableName;
+```
