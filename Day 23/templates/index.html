@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Dynamic Content</title>
+    <script>
+        function loadContent(route, title) {
+            fetch(route, { headers: { 'X-Requested-With': 'XMLHttpRequest' } })
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('content').innerHTML = data.content;
+                    window.history.pushState({ path: route, title: title }, title, route);
+                    document.title = title || 'Flask Dynamic Content';
+                })
+                .catch(error => console.error('Error:', error));
+        }
+
+        window.onpopstate = function(event) {
+            if (event.state) {
+                fetch(event.state.path, { headers: { 'X-Requested-With': 'XMLHttpRequest' } })
+                    .then(response => response.json())
+                    .then(data => {
+                        document.getElementById('content').innerHTML = data.content;
+                        document.title = event.state.title || 'Flask Dynamic Content';
+                    })
+                    .catch(error => console.error('Error:', error));
+            } else {
+                document.getElementById('content').innerHTML = '<h1>Routing Implementation in Flask</h1>';
+                document.title = 'Flask Dynamic Content';
+            }
+        }
+
+        // Load content based on the current URL
+        document.addEventListener('DOMContentLoaded', function() {
+            const currentPath = window.location.pathname;
+            if (currentPath !== '/') {
+                fetch(currentPath, { headers: { 'X-Requested-With': 'XMLHttpRequest' } })
+                    .then(response => response.json())
+                    .then(data => {
+                        document.getElementById('content').innerHTML = data.content;
+                        document.title = document.title || 'Flask Dynamic Content';
+                    })
+                    .catch(error => console.error('Error:', error));
+            }
+        });
+    </script>
+</head>
+<body>
+    <h1>Welcome to the Home Page</h1>
+    <button onclick="loadContent('/', 'Home')">Home</button>
+    <button onclick="loadContent('/about', 'About')">About</button>
+    <button onclick="loadContent('/contact', 'Contact')">Contact</button>
+    <button onclick="loadContent('/user/User', 'User Profile')">User Profile</button>
+    <br>
+    <hr>
+    <button onclick="loadContent('/portfolio', 'Portfolio')">Portfolio</button>
+    <button onclick="loadContent('/portfolio/about', 'Portfolio About')">Portfolio About</button>
+    <button onclick="loadContent('/portfolio/education', 'Education')">Portfolio Education</button>
+    <button onclick="loadContent('/portfolio/personal', 'Personal')">Portfolio Personal</button>
+    <button onclick="loadContent('/portfolio/skills', 'Skills')">Portfolio Skills</button>
+    <button onclick="loadContent('/portfolio/achievements', 'Achievements')">Portfolio Achievements</button>
+
+    <div id="content">
+        <h1>Routing Implementation in Flask</h1>
+    </div>
+</body>
+</html>
