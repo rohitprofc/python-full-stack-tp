@@ -1,0 +1,2 @@
+# [<img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original.svg" title="Git" alt="Git" width="200" height="200"/>](https://gist.github.com/rohitprofc/58a42028e7ef53f7ef6a12d58505f6f9)
+# [<img src="https://res.cloudinary.com/dtdhmbtcg/image/upload/v1717315041/django_czkqax.png" title="Django" alt="Django" width="200" height="200"/>](https://gist.github.com/rohitprofc/304d09871dde76e64afc076008f6a8f2)
