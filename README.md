@@ -9,10 +9,9 @@
 | | CSS | Styles the appearance of web pages (layout, colors, fonts). |
 | | JavaScript | Adds interactivity and behavior to web pages. |
 | | React.js | A popular JavaScript library for building user interfaces. |
-| | Angular | 	A popular JavaScript framework for building Single-Page Applications (SPAs). |
+| | Bootstrap | A front-end framework for building responsive and modern web designs. |
 | **Back-End Development** | SQL | A structured query language for interacting with relational databases. |
 | | MongoDB | A NoSQL document database for flexible data storage. |
-| | Express.js | A popular web framework for building web applications in Node.js (not a programming language). |
 | **Python Web-Development Frameworks** | Django | A high-level Python web framework for rapid development. |
 | | Flask | A lightweight Python web framework for flexible development. |
 | **Version Control** | Git | A distributed version control system for tracking code changes. |
@@ -30,7 +29,6 @@ Jupyter Notebooks offer a more organized and clear way to present information:
 
 * They are easy to study.
 * They can be organized both by day and by topic.
-
 
 ## How to access notes
 
