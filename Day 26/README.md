@@ -29,7 +29,6 @@ A simple notes application built with Django. This project allows users to creat
 
    ```bash
    cd python-full-stack-tp
-   cd Day\ 26
    ```
 
 3. **Create and Activate a Virtual Environment**
@@ -62,7 +61,13 @@ A simple notes application built with Django. This project allows users to creat
    pip install -r requirements.txt
    ```
 
-5. **Apply Migrations**
+5. **Naviagte to Django Project**
+
+   ```bash
+   cd Day\ 26/ myproject
+   ```
+
+6. **Apply Migrations**
 
    Run the Django migrations to set up the database:
 
