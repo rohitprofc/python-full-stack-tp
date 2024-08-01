@@ -1,0 +1,10 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "database": "${workspaceFolder:python-full-stack-tp}/Day 26/myproject/db.sqlite3",
+            "name": "django-notes"
+        }
+    ]
+}
